@@ -1,6 +1,13 @@
 .user-title {
-  @include font(700, 36px, 1.2);
+  @include font(700, 28px, 1.2);
   text-align: center;
   color: $base-color;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .user-title {
+  @include font(700, 36px, 1.2);
+    margin-bottom: 50px;
+  }
 }

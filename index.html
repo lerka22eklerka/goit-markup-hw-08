@@ -57,13 +57,13 @@
       </div>
     </header> -->
     <main>
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open class="button" type="button">Заказать услугу</button>
         </div>
         
-      </section> -->
+      </section>
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Наши особенности</h2>
@@ -123,19 +123,24 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="our-deals section">
+      <section class="our-deals section">
         <div class="container">
           <h2 class="user-title">Чем мы занимаемся</h2>
           <ul class="our-work">
             <li class="our-work__item">
               <div class="our-work__content">
-                <img src="images/box1.jpg" alt="Создание сайтов" width="370" />
+                <img 
+                srcset="./images/box1.jpg 1x,
+                ./images/desktop_img/img1_2x.jpg 2x"
+                src="images/box1.jpg" alt="Создание сайтов" width="370" />
                   <h3 class="our-work__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="our-work__item">
                <div class="our-work__content">
               <img
+                srcset="./images/img2.jpg 1x,
+                ./images/desktop_img/img2_2x.jpg 2x"
                 src="images/img2.jpg"
                 alt="Создание мобильных приложений"
                 width="370"
@@ -146,6 +151,8 @@
             <li class="our-work__item">
               <div class="our-work__content">
               <img
+                srcset="./images/img3.jpg 1x,
+                ./images/desktop_img/img3_2x.jpg 2x"
                 src="images/img3.jpg"
                 alt="Услуги вэб-дизайнера"
                 width="370"
@@ -155,13 +162,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="special-team section">
+      </section>
+      <section class="special-team section">
         <div class="container">
           <h2 class="user-title">Наша команда</h2>
           <ul class="personality">
             <li class="personality__item">
-              <img src="images/team1.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source srcset="./images/team1.jpg 1x,
+                ./images/desktop_img/team1_2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/tablet_img/com_tab1.jpg,
+                ./images/tablet_img/com_tab1_2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/mobile_img/com_1.jpg 1x,
+                ./images/mobile_img/com_1_2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+                <img src="images/team1.jpg" alt="Игорь Демьяненко" />
+              </picture>
                 <div class="personality__data">
                   <h3 class="personality__name">Игорь Демьяненко</h3>
                   <p class="personality__prof">Product Designer</p>
@@ -202,7 +221,20 @@
                 </div>  
             </li>
             <li class="personality__item">
-              <img src="images/team2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source srcset="./images/team2.jpg 1x,
+                ./images/desktop_img/team2_2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/tablet_img/com_tab2.jpg,
+                ./images/tablet_img/com_tab2_2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/mobile_img/com_2.jpg 1x,
+                ./images/mobile_img/com_2_2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+                <img src="images/team2.jpg" alt="Ольга Репина" />
+              </picture>
+              
                 <div class="personality__data">
                   <h3 class="personality__name">Ольга Репина</h3>
                   <p class="personality__prof">Frontend Developer</p>
@@ -243,7 +275,20 @@
                 </div>
             </li>
             <li class="personality__item">
-              <img src="images/team3.jpg" alt="Николай Тарасов" width="270" />
+               <picture>
+                <source srcset="./images/team3.jpg 1x,
+                ./images/desktop_img/team3_2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/tablet_img/com_tab3.jpg,
+                ./images/tablet_img/com_tab3_2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/mobile_img/com_3.jpg 1x,
+                ./images/mobile_img/com_3_2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+                <img src="images/team3.jpg" alt="Николай Тарасов" />
+              </picture>
+              
                 <div class="personality__data">
                   <h3 class="personality__name">Николай Тарасов</h3>
                   <p class="personality__prof">Marketing</p>
@@ -284,7 +329,20 @@
                 </div>
             </li>
             <li class="personality__item">
-              <img src="images/team4.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source srcset="./images/team4.jpg 1x,
+                ./images/desktop_img/team4_2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/tablet_img/com_tab4.jpg,
+                ./images/tablet_img/com_tab4_2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/mobile_img/com_4.jpg 1x,
+                ./images/mobile_img/com_4_2x.jpg 2x
+                "
+                media="(min-width: 320px)">
+                <img src="images/team4.jpg" alt="Михаил Ермаков" />
+              </picture>
+              
                 <div class="personality__data">
                   <h3 class="personality__name">Михаил Ермаков</h3>
                   <p class="personality__prof">UI Designer</p>
@@ -326,8 +384,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="clients section">
+      </section>
+      <section class="clients section">
         <div class="container">
           <h2 class="user-title">Постоянные клиенты</h2>
           <ul class="business-company">
@@ -381,7 +439,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="container footer__container">

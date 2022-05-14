@@ -45,12 +45,11 @@ img {
   
 }
 
-.features {
-  @include desktop {
-     padding-bottom: 0;
-  }
- 
-}
+// .features {
+//   @include desktop {
+//      padding-bottom: 0;
+//   }
+// }
 
 .our-deals {
   display: none;
