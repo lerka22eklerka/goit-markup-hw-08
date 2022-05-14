@@ -1,0 +1,6 @@
+.user-title {
+  @include font(700, 36px, 1.2);
+  text-align: center;
+  color: $base-color;
+  margin-bottom: 50px;
+}

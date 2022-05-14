@@ -1,0 +1,29 @@
+.our-work {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.our-work__item {
+  margin-right: 30px;
+    &:last-child {
+    margin-right: 0px;
+  }
+}
+.our-work__content {
+  position: relative;
+}
+.our-work__title {
+  position: absolute;
+  bottom: 0;
+  color: $title-light;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  padding: 27px;
+  text-align: center;
+  margin-bottom: 0;
+  @include font(700, 14px, 1.1);
+  text-transform: uppercase;
+}
+
+

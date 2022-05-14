@@ -1,0 +1,9 @@
+.public-pages {
+  margin-left: 70px;
+}
+.public-pages__title {
+  @include font(700, 14px, 1.1);
+  text-transform: uppercase;
+  color: $title-light;
+  margin-bottom: 20px;
+}

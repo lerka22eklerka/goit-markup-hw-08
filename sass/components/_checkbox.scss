@@ -1,0 +1,52 @@
+.form-checkbox {
+  position: relative;
+  text-align: center;
+}
+.checkbox-text {
+  @include font(null, 14px, 1.7);
+  color: $contact-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+    .icon-contract {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $base-color;
+    border-radius: 3px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contract-check:checked + .checkbox-text .icon-contract {
+  background-color: $accent-color;
+  border: none;
+}
+.contract-check:focus + .checkbox-text .icon-contract,
+ .contract-check:hover + .checkbox-text .icon-contract {
+  border: 2px solid $accent-color;
+  outline: none;
+}
+
+
+.checkbox-link {
+  color: $accent-color;
+}
+.icon-check {
+  fill: transparent;
+    .contract-check:checked + .checkbox-text .icon-contract & {
+    fill: $title-light;
+    }
+}
+
+.checkbox-link {
+  @include font(null, 14px, 1.7);
+  text-decoration-line: underline;
+  color: $accent-color;
+}

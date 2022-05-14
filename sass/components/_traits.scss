@@ -1,0 +1,62 @@
+.traits {
+  list-style: none;
+  @include tablet {
+  display: flex;
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  }
+  @include desktop {
+  justify-content: space-between;
+  }
+
+}
+.traits__item {
+  width: 320 px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @include mobile {
+      width: 450px;
+  }
+
+  @include desktop {
+  margin-right: 30px;
+  width: 270px;
+    &:last-child {
+    margin-right: 0px;
+  }
+  }
+
+}
+.traits__picture {
+  width: auto;
+  height: 120px;
+  background-color: $bg-color-light;
+  padding: 25px 120px;
+  margin-bottom: 30px;
+  @include mobile {
+    width: 450px;
+    padding: 25px 190px;
+  }
+  @include tablet {
+    width: 354px;
+    padding: 25px 142px;
+  }
+
+  @include desktop {
+  width: 270px;
+  padding: 25px 100px;
+  }
+
+}
+
+.traits__title {
+  @include font(700, 14px, 1.1);
+  text-transform: uppercase;
+  color: $base-color;
+  margin-bottom: 10px;
+}
+.traits__text {
+  @include font(null, 14px, 1.7);
+  color: $contact-color;
+}

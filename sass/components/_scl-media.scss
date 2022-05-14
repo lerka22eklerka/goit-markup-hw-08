@@ -1,0 +1,43 @@
+.scl-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.scl-media__list + .scl-media__list {
+  margin-left: 10px;
+}
+.scl-media__link {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $icon-color;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+    color: $title-light;
+    }
+    .public-pages & {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  }
+}
+.scl-media__icon {
+  fill: currentColor;
+    .public-pages & {
+    fill: $title-light;
+  }
+    .scl-media__link:hover & {
+    fill: currentColor;
+  }
+}
