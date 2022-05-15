@@ -2,10 +2,22 @@
   background-color: $bg-footer;
   padding-top: 60px;
   padding-bottom: 60px;
+    @include desktop {
   display: flex;
   align-items: baseline;
 }
+
+}
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  justify-content: space-around;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+  }
+@include desktop {
+   text-align: left;
+}
 }
