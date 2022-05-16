@@ -1,11 +1,19 @@
 .portfolio-menu {
   list-style: none;
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: -15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @include desktop {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .portfolio-menu__item {
   margin-right: 8px;
+  margin-bottom: 15px;
     &:last-child {
     margin-right: 0;
   }

@@ -3,7 +3,7 @@
   text-align: center;
 }
 .checkbox-text {
-  @include font(null, 14px, 1.7);
+  @include font(null, 12px, 1.16, 0.01em);  
   color: $contact-color;
   display: flex;
   align-items: center;
@@ -21,6 +21,9 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @include desktop {
+    @include font(null, 14px, 1.7);
   }
 }
 
@@ -46,7 +49,10 @@
 }
 
 .checkbox-link {
-  @include font(null, 14px, 1.7);
+  @include font(null, 12px, 1.16, 0.01em);  
   text-decoration-line: underline;
   color: $accent-color;
+  @include desktop {
+    @include font(null, 14px, 1.7);
+  }
 }
