@@ -256,6 +256,20 @@ img {
   margin-left: auto;
   margin-right: 15px;
   padding: 0;
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.mobile-menu-close__icon {
+  fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close:focus .mobile-menu-close__icon,
+.mobile-menu-close:hover .mobile-menu-close__icon {
+  fill: currentColor;
 }
 
 .logo {

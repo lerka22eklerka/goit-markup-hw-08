@@ -31,7 +31,17 @@
     margin-left: auto;
     margin-right: 15px;
     padding: 0;
+    cursor: pointer;
+    color: $accent-color;
 
-
-
+}
+.mobile-menu-close__icon {
+     fill: $base-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .mobile-menu-close:focus &,
+    .mobile-menu-close:hover & {
+    fill: currentColor;
+  }
 }
