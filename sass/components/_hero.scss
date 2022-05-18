@@ -5,7 +5,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile_img/Header_img.jpg);
+    url(../images/mobile_img/Header_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile_img/Header_img2x.jpg);
+      url(../images/mobile_img/Header_img2x.jpg);
   }
   @include mobile {
     min-width: 480px;
@@ -34,7 +34,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet_img/Header_img_tab.jpg);
+      url(../images/tablet_img/Header_img_tab.jpg);
     @media (min-device-pixel-ratio: 2),
      (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -43,7 +43,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tablet_img/Header_img_tab2x.jpg);
+        url(../images/tablet_img/Header_img_tab2x.jpg);
     }
   }
   @include desktop {
@@ -55,7 +55,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/overlay.jpg);
+      url(../images/overlay.jpg);
     @media (min-device-pixel-ratio: 2),
      (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -64,7 +64,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/desktop_img/bg_Img2x.jpg);
+        url(../images/desktop_img/bg_Img2x.jpg);
     }
   }
 }
