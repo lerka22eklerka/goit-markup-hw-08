@@ -121,6 +121,7 @@ img {
   padding-right: 15px;
   padding-bottom: 48px;
   padding-left: 40px;
+  transition: opacity 500ms, visibility 500ms;
 }
 
 .mob-menu .container {

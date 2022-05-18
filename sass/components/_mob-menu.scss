@@ -10,11 +10,11 @@
     padding-right: 15px;
     padding-bottom: 48px;
     padding-left: 40px;
+    transition: opacity 500ms, visibility 500ms;
     .container {
         display: flex;
         flex-direction: column;
         height: 100%;
-        // justify-content: space-between;
         overflow: auto;
     }
 
