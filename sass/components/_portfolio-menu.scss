@@ -5,10 +5,13 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 
-  @include desktop {
-    margin-bottom: 50px;
+  @include tablet {
+    margin-bottom: 30px;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 .portfolio-menu__item {
@@ -16,6 +19,9 @@
   margin-bottom: 15px;
     &:last-child {
     margin-right: 0;
+  }
+  @include tablet {
+    margin-bottom: 0;
   }
 }
 .portfolio-menu__btn {
