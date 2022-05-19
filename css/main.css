@@ -729,15 +729,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .personality__item {
-    margin-right: 30px;
-  }
-  .personality__item:last-child {
-    margin-right: 0px;
-  }
-}
-
 .personality__data {
   padding-bottom: 24px;
   padding-top: 30px;
@@ -839,6 +830,31 @@ img {
   }
 }
 
+.business-company__list {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .business-company__list {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .business-company__list {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .business-company__list {
+    flex-basis: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
 .business-company__link {
   width: 170px;
   height: 92px;
@@ -851,9 +867,6 @@ img {
   transition-property: border, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc(100% / 2 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
 }
 
 .business-company__link:hover, .business-company__link:focus {
@@ -870,16 +883,12 @@ img {
 @media screen and (min-width: 768px) {
   .business-company__link {
     width: 226px;
-    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .business-company__link {
     width: 170px;
-    flex-basis: 0;
-    margin-top: 0;
-    margin-left: 0;
   }
 }
 
@@ -953,6 +962,12 @@ img {
 
 .public-pages {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .public-pages {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1110,14 +1125,16 @@ img {
   .gallery-project {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
 .gallery-project__list {
   width: 100%;
+}
+
+.gallery-project__list:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1131,8 +1148,11 @@ img {
   .gallery-project__list {
     width: 354px;
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .gallery-project__list:nth-child(-n + 8) {
+    margin-bottom: 0;
   }
 }
 

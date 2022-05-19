@@ -17,9 +17,25 @@
   @include desktop {
     margin-left: 30px;
   }
-
-  
 }
+.business-company__list {
+    margin-top: 30px;
+    margin-left: 30px;
+  @include mobile {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+      @include tablet {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+    @include desktop {
+    flex-basis: 0;
+    margin-top: 0;
+    margin-left: 0;
+  } 
+}
+  
+
 .business-company__link {
   width: 170px;
   height: 92px;
@@ -37,21 +53,15 @@
     border: 1px solid $accent-color;
     color: $accent-color;
   }
-    flex-basis: calc(100% / 2 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+
   @include mobile {
     width: 210px;
   }
   @include tablet {
     width: 226px;
-    flex-basis: calc(100% / 3 - 30px);
   }
   @include desktop {
     width: 170px;
-    flex-basis: 0;
-    margin-top: 0;
-    margin-left: 0;
   }  
 }
 .business-company__icon {
