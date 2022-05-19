@@ -1,5 +1,5 @@
 .gallery-project {
-  list-style: none; 
+  list-style: none;
   cursor: pointer;
   margin-top: 40px;
   @include tablet {
@@ -11,12 +11,11 @@
 }
 .gallery-project__list {
   width: 100%;
-&:not(:last-child) {
-  margin-bottom: 30px;
-}
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   @include mobile {
     width: 450px;
-
   }
   @include tablet {
     width: 354px;
@@ -24,14 +23,13 @@
     margin-left: 30px;
     margin-top: 30px;
     &:nth-child(-n + 8) {
-       margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
   @include desktop {
     width: 370px;
     flex-basis: calc(100% / 3 - 30px);
   }
-  
 }
 .gallery-project__link {
   display: block;
@@ -39,8 +37,8 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
@@ -58,18 +56,17 @@
   background-color: $bg-text;
   @include font(400, 18px, 1.6);
   color: $title-light;
- 
+
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .gallery-project__link:hover &,
-    .gallery-project__link:focus & {
+  .gallery-project__link:hover &,
+  .gallery-project__link:focus & {
     transform: translateY(0);
   }
-   @include mobile {
+  @include mobile {
     padding: 77px 24px;
-     
   }
 
   @include tablet {
@@ -77,8 +74,7 @@
     padding-bottom: 77px;
   }
   @include desktop {
-     padding: 63px 24px;
-    
+    padding: 63px 24px;
   }
 }
 
@@ -98,7 +94,6 @@
   @include desktop {
     height: 110px;
   }
-  
 }
 .gallery-project-name__title {
   @include font(700, 18px, 2, 0.06em);
